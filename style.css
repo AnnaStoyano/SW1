@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Sawarabi+Gothic&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+::-webkit-scrollbar{
+    width: 7px;
+    height: 7px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #e9e9e9;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    width: 10px;
+    border-radius: 10px;
+  }
+
+body{
+    background-color: rgb(20, 20, 20);
+    color: rgb(241, 241, 22);
+    font-weight: 500;
+    font-family: 'Sawarabi Gothic', sans-serif;
+
+}
+
+.conteiner{
+    padding: 1rem;
+}
+
+.logo{
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img{
+    width: 65vw;
+}
+
+.heroes{
+    display: flex;
+    padding: 10px;
+    padding-bottom: 15px;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
+.hero-item{
+    width: 330px;
+    min-width: 350px;
+    text-align: center;
+}
+
+.hero-item img{
+    height: 445px;
+    width: auto;
+    object-fit: cover;
+}
+
+table.visability{
+    display: block;
+}
+
+/*TABLE*/
+
+.hero-info{
+    text-align: center;
+    margin: 20px auto;
+    position: relative;
+    border-collapse: collapse;
+    width:95%;
+    display: none;
+    color: rgb(20, 20, 20);
+    background-color: rgb(241, 241, 22);
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.hero-info::before{
+    content: "";
+    display: block;
+    position: absolute;
+    border: 10px solid transparent;
+    border-bottom: 10px solid rgb(241, 241, 22);
+    top:-20px;
+    left: 45%;
+}
+
+.table-row:not(.last-row){
+    border-bottom: 1px dashed rgb(20, 20, 20);
+}
+
+.row-value{
+    text-align: left;
+}
+
+.row-value,.row-name{
+    padding: 8px;
+}
+
+.row-name{
+    width: 40%;
+}
+
+.row-value{
+    width: 60%;
+}
